@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Montserrat;
+    
+}
+
+//HERO SECTION//
+
+.hero-content {
+    position: absolute;
+    top: 117px;
+    left: 89px;
+    z-index: 2;
+}
+
+
+.superfert_logo {
+    position: absolute;
+    top: 12px;
+    left: 28px;
+}
+.hero h1{
+    width: 631px;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 96px;
+    letter-spacing: 0%;
+
+}
+
+.hero p{
+    width: 398px;
+    font-size: 18px;
+    font-weight: 500px;
+    line-height: 28px;
+}
+
+
+.hero-image {
+    position: absolute;
+    width: 1201px;
+    top: 0;
+    right: 0;
+}
+
+
+
+//SPONSOR'S SECTION//
+
+.Sponsors-section{
+    margin-top: 850px;
+    background-color: #e6e6e6;
+    
+
+
+    .image-stack{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 50px 0;
+
+        img {
+            width: 200px;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .text-box{
+        padding-top: 50px;
+        text-align: center;
+
+    
+        h2{
+            font-size: 48px;
+            font-weight: 700px;
+        }
+    
+        p{
+            font-size: 18px;
+            font-weight: 500px;
+            width: 1000px;
+            padding-left: 170px;
+            color: #3F3F3F;
+        }
+    }
+}
+
+
+//ABOUT SECTION//
+
+.about-section{
+    height: 400px;
+
+    .image-stack{
+        align-items: center;
+        width: 100%;
+        
+        .warehouse-bg{
+            z-index: 2;
+        }
+
+        .overlay-pic{
+            z-index: 3;
+        }
+    }
+}
