@@ -12,14 +12,15 @@ const AboutSection = () => {
                 <div className="image-stack">
                     <img src={warehouse} alt="" className="warehouse-bg" />
                     <img src={overlay} alt="" className="overlay-pic" />
+                    <div className="vertical-line-container">
+                        <span className="vertical-line"></span>
+                    </div>
+                    <div className="text-box">
+                        <h2>Made on Zimbabwean soil, for Africa’s soil.</h2>
+                        <p>SuperFert Fertilizer is manufactured in Zimbabwe, and proudly serves to enrich the soils of Africa.</p>   
+                    </div>
                 </div>
 
-                <span className="vertical-line"></span>
-
-                <div className="text-box">
-                    <h2>Made on Zimbabwean soil, for Africa’s soil.</h2>
-                    <p>SuperFert Fertilizer is manufactured in Zimbabwe, and proudly serves to enrich the soils of Africa.</p>   
-                </div>
                 
             </section>
 

@@ -100,18 +100,244 @@ body{
 //ABOUT SECTION//
 
 .about-section{
-    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+
 
     .image-stack{
-        align-items: center;
         width: 100%;
+        height: 100%;
+        object-fit: cover;
         
+
         .warehouse-bg{
+            position: absolute;
+            top: 0;
+            left: 0;
             z-index: 2;
         }
 
         .overlay-pic{
+            position: absolute;
+            top: 0;
+            left: 0;
             z-index: 3;
         }
     }
+
+    .text-box{
+        position: absolute;
+        right: 5px;
+        z-index: 4;
+        padding-top: 100px;
+        color: #fff;
+        
+
+
+        h2{
+            width: 700px;
+            font-size: 46px;
+            font-weight: 800px;
+            font-weight: bold;
+        }
+
+         p{
+            width: 528px;         
+            font-size: 20px;
+            font-weight: 700px;
+            
+        
+        }
+
+    }
+
+    
 }
+
+
+
+//Who WE ARE SECTION//  
+
+.who-we-are-section{
+    margin: 400px;
+    padding-top: 135px;
+    padding-bottom: 50px;
+
+    .text-box{
+             
+        text-align: left;
+        position: absolute;
+        left: 215px;
+        
+        
+        h2{
+            font-weight: 800px;
+            font-size: 48px;
+            line-height: 100%;
+        }
+        p{
+            width: 550px;
+            font-weight: 500px;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: 0%;
+        }
+
+
+    }
+
+    .farmer-div{
+        position: absolute;
+        left: 838px;
+        width: 376px;
+        height: auto;
+
+    }
+
+    
+    .green-line {
+        position: absolute;
+        left: 159px; // Adjust this value to position the line correctly
+        height: 369px; // The length of your line (adjust as needed)
+        width: 5px; // The thickness of your line
+        // You might want to add some margin or positioning depending on your layout
+        background-color: #00FF75; // The color of your line
+        border-radius: 10px; // Optional: to make the line look nicer
+    }
+    
+}
+
+
+//PRODUCTS SECTION//
+
+.products-section {
+    position: relative;
+    color: #fff;
+    background-color: #32936F;
+    padding-top: 77px;
+    height: 2211px;
+
+    h2{
+        position: absolute;
+        right: 5px;
+        
+        font-weight: 800px;
+        font-size: 88px;
+        width: 954px;
+        line-height: 28px;
+        letter-spacing: 0%;
+    }
+
+    .superfert-logo{
+        width: 368px;
+        height: auto;
+    }
+
+   
+    .middle-part{    
+        
+
+
+        p{
+            position: absolute;
+            top: 426px;
+            left: 70px;
+            width: 410px;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: left;
+        }
+
+        .super-bags{
+            position: absolute;
+            top: 327px;
+            right: 0;
+            width: 820px;
+            height: auto;
+        }
+
+    }
+
+    .grid-part{
+        width: 365px;                /* Rectangle width */
+        height: 519px;              /* Rectangle height */
+        background-color: #32936F;
+        box-shadow: inset 0 0 16px rgba(0,0,0,0.4); /* Inner shadow */
+        border-radius: 5px;         /* Optional: rounded corners */
+        color: #fff;
+        position: absolute;
+        top: 993px;
+        left: 109px;
+
+
+         
+        .grid-item {
+
+            .mini-box{
+                width: 348px;
+                height: 100%;
+                padding-left: 17px;
+                padding-top: 19px;
+        
+             }
+
+            .text-box{
+                padding-left: 17px;
+                padding-top: 0px;
+            
+                h2{
+                    font-weight: 700px;
+                    font-size: 24px;
+                    line-height: 28px;
+                    letter-spacing: 0%;
+
+                }
+
+                p{
+                    font-weight: 400px;
+                    font-size: 16px;
+                    line-height: 100%;
+                }
+            }
+        }
+    }
+
+    
+
+
+}
+
+
+.grid-part{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 65px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Began who we are section but failing to use the display flex method on the textbox and farmer img//
+//COULD USE THE POSITION ABSOLUTE RIGHT METHOD!?//
