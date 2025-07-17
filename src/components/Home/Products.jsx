@@ -21,7 +21,7 @@ const ProductsSection = () => {
 
                 <div className="upper-part">
                     <h2>SuperFert Products.</h2>
-                    <img src={superfert} alt="logo" className='superfert-logo' />            
+                    <img src={superfert} alt="logo" className='superfert-logo' />
                 </div>
 
                 <div className="middle-part">
@@ -31,6 +31,8 @@ const ProductsSection = () => {
 
                 <div className="grid-part">
 
+
+
                     <div className="grid-item">
                         <img src={boximg} alt="box" className='mini-box' />
                         <div className="text-box">
@@ -39,7 +41,7 @@ const ProductsSection = () => {
                         </div>
                     </div>
 
-                    <div className="grid-item2">
+                    <div className="grid-item">
                         <img src={boximg} alt="box" className='mini-box' />
                         <div className="text-box">
                             <h3>Tobacco Fertilizer</h3>
@@ -47,15 +49,7 @@ const ProductsSection = () => {
                         </div>
                     </div>
 
-                    <div className="grid-item3">
-                        <img src={boximg} alt="box" className='mini-box' />
-                        <div className="text-box">
-                            <h3>Tobacco Fertilizer</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore.</p>
-                        </div>
-                    </div>
-                    
-                    <div className="grid-item4">
+                    <div className="grid-item">
                         <img src={boximg} alt="box" className='mini-box' />
                         <div className="text-box">
                             <h3>Tobacco Fertilizer</h3>
@@ -63,7 +57,11 @@ const ProductsSection = () => {
                         </div>
                     </div>
 
-                    <div className="grid-item5">
+
+
+
+
+                    <div className="grid-item">
                         <img src={boximg} alt="box" className='mini-box' />
                         <div className="text-box">
                             <h3>Tobacco Fertilizer</h3>
@@ -71,13 +69,23 @@ const ProductsSection = () => {
                         </div>
                     </div>
 
-                    <div className="grid-item6">
+                    <div className="grid-item">
                         <img src={boximg} alt="box" className='mini-box' />
                         <div className="text-box">
                             <h3>Tobacco Fertilizer</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore.</p>
                         </div>
                     </div>
+
+                    <div className="grid-item">
+                        <img src={boximg} alt="box" className='mini-box' />
+                        <div className="text-box">
+                            <h3>Tobacco Fertilizer</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+
+
 
 
 
