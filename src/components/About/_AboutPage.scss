@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Montserrat;
+
+}
+
+.first-section{ 
+
+
+    .crops-bg {
+        width: 100%;
+        object-fit: cover;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0 ;
+    }
+
+    h2{
+        color: #fff;
+        z-index: 5;
+        font-size: 72px;
+        font-style: ExtraBold;
+        font-weight: 800;
+    }
+
+    .h2{
+        position: absolute;
+        top: 550px;
+        left: 103px;
+    }
+
+    .blur-overlay {
+        width: 100%;
+        height: 448px;
+        background: rgba(0, 0, 0, 0.5); // semi-transparent black
+        opacity: 0.5;
+        position: absolute; 
+        top: 467px;
+        left: 0;
+        z-index: 3;
+        backdrop-filter: blur(22px); // <-- blur effect
+        -webkit-backdrop-filter: blur(22px); // for Safari support
+        
+    }
+
+
+}
+
+
+
+.more-section{
+    margin-top: 55rem;
+    margin-bottom: 10rem;
+
+    .image-stack {
+        display: flex;
+        flex-direction: row;
+        gap: 300px;
+        
+        .text-box{
+            
+            padding-top: 178px;
+            margin-left: 127px;
+            z-index: 4;
+            width: 500px;
+            font-size: 18px;
+            line-height: 100%;
+            letter-spacing: 0%;
+    
+    
+        }
+
+        .farmer-img {
+            width: 377px;
+            height: auto;
+            padding-top: 178px;
+
+
+
+        }
+    }
+
+}
+

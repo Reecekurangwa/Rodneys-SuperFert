@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Montserrat;
+
+}
+
+//FIRST SECTION//
+
+.first-sectionn{ 
+
+
+    .crops-bg {
+        width: 100%;
+        object-fit: cover;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0 ;
+    }
+
+    .text-boxes{
+        display: flex;
+        flex-direction: row;
+        gap: 20rem;
+
+
+        .text-box1{
+            position: relative;
+            z-index: 5;
+            
+                h2{
+                    color: #fff;
+                    font-size: 72px;
+                    font-style: ExtraBold;
+                    font-weight: 800;
+                    margin-top: 550px;
+                    padding-left: 103px;
+    
+                }
+            
+    
+        }
+    
+        .text-box2{
+            position: relative;
+            z-index: 5;
+            color: #fff;
+            margin-top: 650px;
+    
+            .upper-text{
+                display: flex;
+                flex-direction: row;
+            }
+    
+            .middle-text{
+                width: 350px;
+            }
+            .lower-text{
+                display: flex;
+                flex-direction: row;
+                gap: 0px;
+
+                .one{
+                    width: 100px;
+                    font-size: 50px;
+                }
+            }
+    
+        }
+    }
+
+
+
+    .blur-overlay {
+        width: 100%;
+        height: 448px;
+        background: rgba(0, 0, 0, 0.5); // semi-transparent black
+        opacity: 0.5;
+        position: absolute; 
+        top: 467px;
+        left: 0;
+        z-index: 2;
+        backdrop-filter: blur(22px); // <-- blur effect
+        -webkit-backdrop-filter: blur(22px); // for Safari support
+        
+    }
+
+
+}
+
+
+
+
+
+
+//SECOND SECTION//
+
+.Second-section{
+    margin-top: 0rem;
+    margin-bottom: 10rem;
+
+    .header-content{
+        display: flex;
+        flex-direction: column;
+        padding-left: 103px;
+
+        
+            h3{
+                font-weight: 800;
+                font-style: ExtraBold;
+                font-size: 48px;
+
+            }
+        
+            .grey-line{
+                height: 3px; // The length of your line (adjust as needed)
+                width: 1320px; // The thickness of your line
+                background-color: #DFDFDF; // The color of your line
+                border-radius: 10px; 
+                z-index: 5;
+                rotate: 90;
+        
+            }
+
+    }
+
+
+    .grid-part{
+        margin-top: 50px;
+        margin-left: 107px;
+        column-gap: 0;
+
+        .grid-item{
+    
+    
+            .agro-tent{
+                width: 350px;
+                height: auto;
+    
+    
+            }
+    
+            .text-box{
+                h3{
+                    width: 357px;
+                    font-weight: 700;
+                    font-style: Bold;
+                    font-size: 22px;
+                    color: #000000;
+                }
+                p{
+                    width: 338px;
+                    font-weight: 500;
+                    font-style: regular;
+                    font-size: 18px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+
+}
