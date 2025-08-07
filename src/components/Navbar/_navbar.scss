@@ -1,0 +1,93 @@
+/* src/components/Navbar/_navbar.scss */
+
+.navbar {
+  position: sticky; /* Makes the navbar stick to the top */
+  top: 41px; /* Sticks it to the very top of the viewport */
+  left: 400px;
+  width: 914px;
+  background-color: #EBEBEBE5; /* Grey background color */
+  padding: 15px 0; /* Vertical padding */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+  z-index: 1000; /* Ensures the navbar stays on top of other content when scrolling */
+  border-radius: 0 0 10px 10px; /* Example: Rounds only the bottom-left and bottom-right corners */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center; /* Center the navigation links horizontally */
+  gap: 30px; /* Space between each navigation item */
+  max-width: 1200px; /* Limit the width of the container */
+  margin: 0 auto; /* Center the container itself */
+  padding: 0 20px; /* Horizontal padding for smaller screens */
+}
+
+.nav-link {
+  color: black; /* Default text color for all links (black on grey) */
+  text-decoration: none; /* Remove default underline from the text itself */
+  font-family: 'Montserrat', sans-serif; /* Using Montserrat font */
+  font-weight: 500; /* Medium font weight */
+  padding: 5px 10px; /* Padding around the text to make it easier to click */
+  white-space: nowrap; /* Prevent text from wrapping */
+
+  position: relative; /* Crucial: Establishes a positioning context for the ::after pseudo-element */
+  z-index: 1; /* Ensures the text is above the ::after background */
+  transition: color 0.3s ease; /* Smooth transition for text color changes */
+}
+
+/* The "mini rectangle box" as a background indicator */
+.nav-link::after {
+  content: ''; /* Required for pseudo-elements */
+  position: absolute; /* Position relative to the .nav-link parent */
+  top: 0; /* Position at the top of the link */
+  left: 0; /* Start from the left edge */
+  width: 100%; /* Make it cover the whole link area */
+  height: 100%; /* Make it cover the whole link area */
+  background-color: black; /* The color of the active box */
+  z-index: -1; /* Place it behind the text */
+  transform: scaleX(0); /* Initially hidden (scaled to 0 width) */
+  transform-origin: left; /* Scales the box from the left edge */
+  transition: transform 0.3s ease; /* Animate the scaling */
+border-radius: 5px;
+}
+
+/* Hover effect for the text (inactive links) */
+.nav-link:hover {
+  color: #333; /* Text darkens slightly on hover */
+}
+
+/* Active state for the link (text color) */
+.nav-link.active {
+  color: white; /* Active link text color (white on black box) */
+  font-weight: 700; /* Bolder for active link */
+}
+
+/* Active state for the indicator (the "mini rectangle box") */
+.nav-link.active::after {
+  transform: scaleX(1); /* Expands to full width when active */
+}
+
+.nav-item-disabled {
+  color: rgba(0, 0, 0, 0.5); /* Dimmed black for non-clickable items */
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  padding: 5px 10px;
+  cursor: not-allowed; /* Indicate it's not clickable */
+  white-space: nowrap;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items when wrapped */
+    gap: 15px; /* Reduce gap on smaller screens */
+    padding: 0 10px;
+  }
+
+  .nav-link,
+  .nav-item-disabled {
+    font-size: 0.9em; /* Slightly smaller font size */
+    padding: 5px 8px;
+  }
+}

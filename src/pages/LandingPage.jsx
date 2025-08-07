@@ -9,7 +9,9 @@ import FooterSection from "../components/Home/Footer";
 
 
 const LandingPage = () => (
+
   <>
+  
   
     <HeroSection/>
     <SponsorsSection/>

@@ -38,7 +38,8 @@ body {
                     font-style: ExtraBold;
                     font-weight: 800;
                     margin-top: 550px;
-                    padding-left: 103px;
+                    padding-left: 80px;
+                    width: 588px;
     
                 }
             
@@ -49,7 +50,7 @@ body {
             position: relative;
             z-index: 5;
             color: #fff;
-            margin-top: 650px;
+            margin-top: 510px;
     
             .upper-text{
                 display: flex;
@@ -69,11 +70,25 @@ body {
                     font-size: 50px;
                 }
             }
-    
+            
         }
     }
+    
+    
+    .lower-text2{   //I seperated this from the lower-text class for easier positioning
+        position: absolute;
+        top: 20rem;
+        gap: 0px;
+        z-index: 3;
 
-
+        .four{
+            width: 100px;
+            font-size: 20px;
+            color: #fff;
+            padding-left: 66rem;
+            padding-top: 24rem;
+        }
+    }
 
     .blur-overlay {
         width: 100%;
@@ -81,7 +96,7 @@ body {
         background: rgba(0, 0, 0, 0.5); // semi-transparent black
         opacity: 0.5;
         position: absolute; 
-        top: 467px;
+        top: 367px;
         left: 0;
         z-index: 2;
         backdrop-filter: blur(22px); // <-- blur effect
@@ -100,7 +115,7 @@ body {
 //SECOND SECTION//
 
 .Second-section{
-    margin-top: 0rem;
+    margin-top: 10rem;
     margin-bottom: 10rem;
 
     .header-content{
@@ -118,7 +133,7 @@ body {
         
             .grey-line{
                 height: 3px; // The length of your line (adjust as needed)
-                width: 1320px; // The thickness of your line
+                width: 1172px; // The thickness of your line
                 background-color: #DFDFDF; // The color of your line
                 border-radius: 10px; 
                 z-index: 5;

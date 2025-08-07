@@ -28,15 +28,14 @@ const FirstSection = () => {
                         </div>
 
                         <div className="lower-text">
-                            <p className="one">01</p>
-                            <p>/04</p>                    
+                            <p className="one">01</p>                   
                         </div>
+
                     </div>
 
-
-
-
-
+                </div>
+                <div className="lower-text2">
+                    <p className="four">/04</p>                   
                 </div>
                 
             </section>
