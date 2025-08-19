@@ -3,7 +3,7 @@ import HeroSection from "../components/Home/Hero";
 import SponsorsSection from "../components/Home/Sponsors";
 import AboutSection from "../components/Home/About";
 import WhoWeare from "../components/Home/Who-we-are";
-import ProductsSection from "../components/Home/Products";
+import BlogSection from "../components/Home/BlogSection";
 import QueriesSection from "../components/Home/Queries";
 import FooterSection from "../components/Home/Footer";
 
@@ -17,7 +17,7 @@ const LandingPage = () => (
     <SponsorsSection/>
     <AboutSection/>
     <WhoWeare/>
-    <ProductsSection/>
+    <BlogSection/>
     <QueriesSection/>
     <FooterSection/>
 
