@@ -11,6 +11,7 @@ const ProductsSection = () => {
     const [showForm, setShowForm] = useState(false);
     const [editingPost, setEditingPost] = useState(null);
     const [searchTerm, setSearchTerm] = useState('');
+    const [viewingPost, setViewingPost] = useState(null); // 👈 new state
     const [formData, setFormData] = useState({
         title: '',
         body: ''
@@ -161,6 +162,7 @@ const ProductsSection = () => {
     const filteredPosts = posts.filter(post =>
         post.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
+    
 
     return (
         <>
@@ -251,6 +253,24 @@ const ProductsSection = () => {
                     </div>
                 )}
 
+                {/* View Modal */}
+                {viewingPost && (
+                    <div className="modal-overlay">
+                        <div className="modal-content">
+                            <h3 className="modal-title">{viewingPost.title}</h3>
+                            <p className="modal-body">{viewingPost.body}</p>
+                            <div className="form-buttons">
+                                <button
+                                    onClick={() => setViewingPost(null)}
+                                    className="cancel-btn"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                )}
+
                 <div className="grid-part">
                     {filteredPosts.map((post) => (
                         <div key={post.id} className="grid-item">
@@ -260,7 +280,7 @@ const ProductsSection = () => {
                                 <p>{post.body.length > 100 ? `${post.body.substring(0, 100)}...` : post.body}</p>
                                 <div className="post-actions">
                                     <button
-                                        onClick={() => alert(`Full Post:\n\nTitle: ${post.title}\n\nContent: ${post.body}`)}
+                                        onClick={() => setViewingPost(post)} // 👈 updated
                                         className="view-btn"
                                     >
                                         View
